@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.myorg</groupId>
-	<artifactId>mulecicddemo</artifactId>
+	<groupId>com.razzaq.demo</groupId>
+	<artifactId>razzaqmulecicddemo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
-	<name>Mule CICDDemo Application</name>
+	<name>Mule Razzaq CICDDemo Application</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
