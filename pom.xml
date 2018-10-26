@@ -4,10 +4,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.myorg</groupId>
-	<artifactId>mule-ci-cd-demo</artifactId>
+	<artifactId>mulecicddemo</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule</packaging>
-	<name>Mule CICD Demo Application</name>
+	<name>Mule CICDDemo Application</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
