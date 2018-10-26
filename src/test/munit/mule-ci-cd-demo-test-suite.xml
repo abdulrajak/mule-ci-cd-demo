@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:core="http://www.mulesoft.org/schema/mule/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <munit:config name="munit" doc:name="MUnit configuration" mock-connectors="false" mock-inbounds="false"/>
+    <spring:beans>
+        <spring:import resource="classpath:mule-ci-cd-demo.xml"/>
+    </spring:beans>
+    <munit:test name="mule-ci-cd-demo-test-suite-mule-ci-cd-demo-flowTest" description="Test">
+        <flow-ref name="mule-ci-cd-demo-flow" doc:name="Flow-ref to mule-ci-cd-demo-flow"/>
+        <munit:assert-payload-equals message="Payload does not match!" expectedValue="#['CI CD Demo']" doc:name="Assert Payload"/>
+    </munit:test>
+</mule>
